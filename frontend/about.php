@@ -271,7 +271,7 @@
                     <div class="absolute -top-6 -right-6 w-24 h-24 bg-white/10 rounded-full"></div>
                     <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-white/10 rounded-full"></div>
                     <div class="relative z-10 rounded-xl overflow-hidden shadow-elegant">
-                        <img src="https://images.unsplash.com/photo-1636555197963-0ade1c1a7a84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Istanbul skyline" class="w-full h-auto">
+                        <img src="assets/images/team.jpg" alt="Istanbul skyline" class="w-full h-auto">
                     </div>
                 </div>
             </div>

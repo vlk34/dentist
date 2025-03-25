@@ -4,7 +4,28 @@
 <main>
     <!-- Hero Section -->
     <section class="relative overflow-hidden bg-gradient">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <!-- Add subtle pattern background -->
+        <div class="absolute inset-0 opacity-10">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="dental-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M0 20h40M20 0v40" stroke="#6B7280" stroke-width="0.5" fill="none" />
+                        <circle cx="20" cy="20" r="2" fill="#4F46E5" opacity="0.2" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#dental-pattern)" />
+            </svg>
+        </div>
+        
+        <!-- Add soft gradient overlays -->
+        <div class="absolute inset-0">
+            <div class="absolute top-0 right-0 w-2/3 h-2/3 bg-gradient-to-bl from-primary-100 to-transparent opacity-30"></div>
+            <div class="absolute bottom-0 left-0 w-2/3 h-2/3 bg-gradient-to-tr from-primary-200 to-transparent opacity-30"></div>
+        </div>
+        
+        <!-- Remove the wave shapes section -->
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="max-w-lg animate-slide-up">
                     <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800 mb-6">
@@ -100,9 +121,22 @@
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="py-16 bg-gradient">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Features Section with new pattern -->
+    <section class="py-16 bg-gradient relative">
+        <!-- Add diagonal pattern background -->
+        <div class="absolute inset-0 opacity-10">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="features-pattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+                        <path d="M0 0L60 60M60 0L0 60" stroke="#6B7280" stroke-width="0.5" fill="none" />
+                        <circle cx="30" cy="30" r="1.5" fill="#4F46E5" opacity="0.2" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#features-pattern)" />
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-soft hover-lift scroll-reveal">
@@ -176,9 +210,21 @@
         </div>
     </section>
 
-    <!-- Info Cards Section -->
-    <section class="py-16 bg-gradient">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Info Cards Section with new pattern -->
+    <section class="py-16 bg-gradient relative">
+        <!-- Add dot pattern background -->
+        <div class="absolute inset-0 opacity-10">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="dot-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <circle cx="10" cy="10" r="1.5" fill="#4F46E5" opacity="0.3" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#dot-pattern)" />
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Info Card 1 -->
                 <div class="bg-white rounded-xl p-8 shadow-soft hover-lift scroll-reveal">
@@ -339,9 +385,21 @@
         </div>
     </section>
 
-    <!-- Modern Tech Section -->
-    <section class="py-20 bg-gradient">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Modern Tech Section with new pattern -->
+    <section class="py-20 bg-gradient relative">
+        <!-- Add hexagonal pattern background -->
+        <div class="absolute inset-0 opacity-10">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="hex-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M20 10L10 20L20 30L30 20Z" stroke="#6B7280" stroke-width="0.5" fill="none" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#hex-pattern)" />
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="scroll-reveal">
                     <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800 mb-4">
@@ -563,8 +621,20 @@
     </section>
 
     <!-- What We Do Section - Popular Services -->
-    <section id="services" class="py-20 bg-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" class="py-20 bg-white relative">
+        <!-- Add curved pattern background -->
+        <div class="absolute inset-0 opacity-5">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="services-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                        <path d="M25,50 a25,25 0 1,1 50,0 a25,25 0 1,1 -50,0" stroke="#4F46E5" stroke-width="0.5" fill="none" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#services-pattern)" />
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16">
                 <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800 mb-4">
                     <span class="flex h-2 w-2 rounded-full bg-primary-600 mr-2"></span>
