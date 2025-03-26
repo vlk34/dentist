@@ -189,4 +189,5 @@
 </head>
 <body class="bg-white text-secondary-800">
     <div class="min-h-screen flex flex-col">
+    <!-- Navbar is now included separately via includes/navbar.php -->
 

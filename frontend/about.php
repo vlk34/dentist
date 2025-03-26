@@ -3,306 +3,480 @@
 
 <main>
     <!-- Hero Section -->
-    <section class="relative overflow-hidden bg-gradient">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="max-w-lg animate-slide-up">
-                    <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800 mb-6">
-                        <span class="flex h-2 w-2 rounded-full bg-primary-600 mr-2"></span>
+    <section class="relative overflow-hidden bg-gradient-to-br from-teal-50 to-emerald-50 py-20 md:py-28">
+        <!-- Background pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="dental-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M0 20h40M20 0v40" stroke="#6B7280" stroke-width="0.5" fill="none" />
+                        <circle cx="20" cy="20" r="2" fill="#0D9488" opacity="0.3" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#dental-pattern)" />
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Text content -->
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-teal-100 text-teal-800 mb-4">
+                        <span class="flex h-2 w-2 rounded-full bg-teal-600 mr-2"></span>
                         About Clidenta
                     </div>
-                    <h1 class="text-4xl md:text-5xl font-display font-bold tracking-tight text-secondary-900 mb-6 leading-tight">
-                        Your <span class="text-gradient">trusted partner</span> for dental excellence
-                    </h1>
-                    <p class="text-lg text-secondary-600 mb-8 leading-relaxed">
-                        We are your friendly, professional and affordable private dental clinic in Istanbul offering an extensive range of dental services, including cosmetic, orthodontic, periodontic, endodontic, implant and cosmetic teeth whitening treatments.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#team" class="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-primary shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-all group">
-                            <span class="mr-2">Meet Our Team</span>
-                            <svg class="h-5 w-5 text-white group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-secondary-900 mb-6 leading-tight">Your Partner for <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600">Better Smiles</span></h1>
+                    <p class="text-xl text-secondary-600 mb-8 max-w-lg mx-auto lg:mx-0">Clidenta's connection to Istanbul runs deep, and we strive to make an impact that extends far beyond our dental practice. Discover how our experienced team can transform your smile.</p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#services" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-teal-600 to-emerald-600 shadow-md hover:shadow-lg transition-all">
+                            Our Services
                         </a>
-                        <a href="index.php#appointment" class="inline-flex justify-center items-center px-6 py-3 border border-primary-200 text-base font-medium rounded-md text-primary-700 bg-white hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-all">
+                        <a href="#appointment" class="inline-flex items-center justify-center px-6 py-3 border border-teal-600 text-base font-medium rounded-md text-teal-700 bg-white hover:bg-teal-50 shadow-sm transition-all">
                             Book Appointment
                         </a>
                     </div>
-                </div>
-                <div class="relative animate-slide-down">
-                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-primary-100 rounded-full opacity-50 mix-blend-multiply filter blur-xl"></div>
-                    <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-primary-200 rounded-full opacity-50 mix-blend-multiply filter blur-xl"></div>
                     
-                    <div class="relative rounded-2xl overflow-hidden shadow-elegant">
-                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Clidenta dental clinic reception" class="w-full h-auto object-cover">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center mb-16">
-                <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800 mb-4">
-                    <span class="flex h-2 w-2 rounded-full bg-primary-600 mr-2"></span>
-                    Who We Are
-                </div>
-                <h2 class="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-6">Excellence in Dental Care</h2>
-                <p class="text-lg text-secondary-600">The Clidenta is based in the most beautiful district Kadikoy in Istanbul, proudly supported by an experienced and highly skilled team of dentists.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1 scroll-reveal">
-                    <div class="space-y-6 text-secondary-600">
-                        <p>All our experiences combined offer you access to specialist dental care in a modern and comfortable treatment centre. Our staff participates in numerous trainings, courses and seminars both in America and abroad. We use the best materials in our work.</p>
-                        
-                        <p>The work is carried out with maximum precision, on time and according to international standards. If you travel through Istanbul for business or personal reasons, this is a great solution that will save you a lot of valuable time.</p>
-                        
-                        <p>Proper management of a client's medical information helps the new dentist fluidly continue the high-quality treatment. We are committed to using the latest technology and techniques to ensure our patients receive the best possible treatment.</p>
-                    </div>
-                    
-                    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="bg-primary-50 rounded-lg p-6">
-                            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-4">
-                                <svg class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-display font-bold text-secondary-900 mb-2">Certified Professionals</h3>
-                            <p class="text-secondary-600">Our team consists of certified dental professionals with years of experience.</p>
+                    <!-- Trust indicators -->
+                    <div class="mt-10 grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-teal-600">20+</div>
+                            <div class="text-sm text-secondary-500">Years Experience</div>
                         </div>
-                        
-                        <div class="bg-primary-50 rounded-lg p-6">
-                            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-4">
-                                <svg class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-display font-bold text-secondary-900 mb-2">Modern Technology</h3>
-                            <p class="text-secondary-600">We use the latest dental technology to provide the best care possible.</p>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-teal-600">5,000+</div>
+                            <div class="text-sm text-secondary-500">Happy Patients</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-teal-600">12</div>
+                            <div class="text-sm text-secondary-500">Specialists</div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="order-1 lg:order-2 relative scroll-reveal" data-delay="100">
-                    <div class="absolute -top-6 -right-6 w-24 h-24 bg-primary-100 rounded-full"></div>
-                    <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-primary-100 rounded-full"></div>
+                <!-- Image with overlapping elements -->
+                <div class="relative">
+                    <!-- Decorative elements -->
+                    <div class="absolute -top-6 -left-6 w-24 h-24 bg-teal-100 rounded-full opacity-70 z-0"></div>
+                    <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-emerald-100 rounded-full opacity-70 z-0"></div>
+                    
+                    <!-- Main image -->
                     <div class="relative z-10 rounded-xl overflow-hidden shadow-elegant">
-                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Dental equipment" class="w-full h-auto">
+                        <img src="assets/images/team.jpg" alt="Clidenta Dental Team" class="w-full h-auto">
+                    </div>
+                    
+                    <!-- Floating badge -->
+                    <div class="absolute -bottom-5 -left-5 bg-white rounded-lg shadow-lg px-4 py-3 z-20">
+                        <div class="flex items-center space-x-2">
+                            <div class="flex text-yellow-400">
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                            <div class="text-sm font-medium text-secondary-900">4.9/5</div>
+                        </div>
+                        <div class="text-xs text-secondary-500 mt-1">Based on 350+ reviews</div>
+                    </div>
+                    
+                    <!-- Certificate badge -->
+                    <div class="absolute -top-5 -right-5 bg-white rounded-lg shadow-lg p-2 z-20">
+                        <div class="bg-gradient-to-r from-teal-600 to-emerald-600 rounded-md p-2">
+                            <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mission Section -->
-    <section class="py-20 bg-gradient">
+    <!-- General and Family Dentistry Section -->
+    <section class="py-20 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center mb-16">
-                <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800 mb-4">
-                    <span class="flex h-2 w-2 rounded-full bg-primary-600 mr-2"></span>
-                    Our Mission
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-teal-100 text-teal-800 mb-4">
+                    <span class="flex h-2 w-2 rounded-full bg-teal-600 mr-2"></span>
+                    Our Expertise
                 </div>
-                <h2 class="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-6">What Drives Us Forward</h2>
-                <p class="text-lg text-secondary-600">Our mission is to provide exceptional dental care to our patients from all around the world, with a focus on quality, affordability, and convenience.</p>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-4">General & Family Dentistry</h2>
+                <div class="w-20 h-1 bg-teal-600 mx-auto"></div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Mission Card 1 -->
-                <div class="bg-white rounded-xl p-8 shadow-soft hover-lift scroll-reveal">
-                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                <!-- Experience -->
+                <div class="bg-gray-50 rounded-xl p-8 text-center shadow-soft hover-lift scroll-reveal">
+                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="h-8 w-8 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-display font-bold text-secondary-900 mb-3">Good Support</h3>
-                    <p class="text-secondary-600">We are committed to using the latest technology and techniques to ensure our patients receive the best possible treatment and support throughout their dental journey.</p>
+                    <h3 class="text-2xl font-display font-bold text-secondary-900 mb-4">30 Years Combined Experience</h3>
+                    <p class="text-secondary-600">We bring a wealth of knowledge and expertise to every treatment. You can trust in our years of practice and skill to provide you with the highest standard of dental care.</p>
                 </div>
                 
-                <!-- Mission Card 2 -->
-                <div class="bg-white rounded-xl p-8 shadow-soft hover-lift scroll-reveal" data-delay="100">
-                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-display font-bold text-secondary-900 mb-3">High Quality</h3>
-                    <p class="text-secondary-600">We never compromise on quality. From the materials we use to the procedures we perform, everything is done with the highest standards of dental excellence.</p>
-                </div>
-                
-                <!-- Mission Card 3 -->
-                <div class="bg-white rounded-xl p-8 shadow-soft hover-lift scroll-reveal" data-delay="200">
-                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <!-- Patient-Centered Experience -->
+                <div class="bg-gray-50 rounded-xl p-8 text-center shadow-soft hover-lift scroll-reveal" data-delay="100">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="h-8 w-8 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-display font-bold text-secondary-900 mb-3">Individual Approach</h3>
-                    <p class="text-secondary-600">Our team of highly skilled and experienced dental professionals is dedicated to delivering personalised care and ensuring the comfort and satisfaction of our patients.</p>
+                    <h3 class="text-2xl font-display font-bold text-secondary-900 mb-4">Your Experience Matters</h3>
+                    <p class="text-secondary-600">Our patient-centered approach means that we take the time to get to know you, to listen, understand, and address your concerns, ensuring a positive and personalized dental experience.</p>
+                </div>
+                
+                <!-- We Love to See You Smile -->
+                <div class="bg-gray-50 rounded-xl p-8 text-center shadow-soft hover-lift scroll-reveal" data-delay="200">
+                    <div class="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="h-8 w-8 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-display font-bold text-secondary-900 mb-4">We Love To See Your Smile</h3>
+                    <p class="text-secondary-600">No judgement, no pain, no fear! We are passionate about helping you achieve and maintain a healthy, beautiful smile that you can be proud of.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section id="team" class="py-20 bg-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center mb-16">
-                <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800 mb-4">
-                    <span class="flex h-2 w-2 rounded-full bg-primary-600 mr-2"></span>
-                    Our Specialists
-                </div>
-                <h2 class="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-6">Meet Our Dental Specialists</h2>
-                <p class="text-lg text-secondary-600">Keeping your smile beautiful and your teeth healthy is the mission of our team with more than 20 years of experience.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Team Member 1 - Dr. Tuğba Temur -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-soft hover-lift scroll-reveal flex flex-col md:flex-row">
-                    <div class="md:w-2/5 relative">
-                        <img src="assets/images/dr-tugba-temur.jpeg" alt="DT. Tuğba Temur" class="w-full h-full object-cover object-center md:h-72">
-                    </div>
-                    <div class="md:w-3/5 p-6">
-                        <h3 class="text-xl font-display font-bold text-secondary-900 mb-1">DT. Tuğba Temur</h3>
-                        <p class="text-primary-600 font-medium mb-4">Co-founder, Dental Specialist</p>
-                        <p class="text-secondary-600">Graduate of Hacettepe University Faculty of Dentistry (1999). Specializes in aesthetic fillings, smile design, zirconium crowns, root canal treatment and pediatric dentistry. Co-founder of Clidenta Oral and Dental Health Polyclinic since 2013.</p>
+    <!-- Our Difference, Mission, and Values Section -->
+    <section class="py-20 bg-gradient-to-br from-teal-50 to-emerald-50 relative">
+        <div class="absolute inset-0 opacity-10">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="dot-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <circle cx="10" cy="10" r="1.5" fill="#0E7490" opacity="0.3" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#dot-pattern)" />
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="absolute -top-6 -left-6 w-24 h-24 bg-teal-100 rounded-full opacity-70"></div>
+                    <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-emerald-100 rounded-full opacity-70"></div>
+                    <div class="relative z-10 rounded-xl overflow-hidden shadow-elegant">
+                        <img src="assets/images/hero-img.jpeg" alt="Clidenta waiting area" class="w-full h-auto">
                     </div>
                 </div>
                 
-                <!-- Team Member 2 - Dr. Fatoş Ezgi Dökme -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-soft hover-lift scroll-reveal flex flex-col md:flex-row" data-delay="100">
-                    <div class="md:w-2/5 relative">
-                        <img src="assets/images/dr-ezgi.png" alt="DT. Fatoş Ezgi Dökme" class="w-full h-full object-cover object-center md:h-72">
-                    </div>
-                    <div class="md:w-3/5 p-6">
-                        <h3 class="text-xl font-display font-bold text-secondary-900 mb-1">DT. Fatoş Ezgi Dökme</h3>
-                        <p class="text-primary-600 font-medium mb-4">Dental Specialist</p>
-                        <p class="text-secondary-600">Graduate of Çukurova University Faculty of Dentistry. Extensive experience in Adana and Istanbul's top dental facilities. Opened her private practice in Etiler (2009) before joining Clidenta Oral and Dental Health Clinic in 2013.</p>
+                <div>
+                    <div class="space-y-12">
+                        <!-- Our Difference -->
+                        <div>
+                            <h3 class="text-2xl font-display font-bold text-secondary-900 mb-4 border-b border-teal-200 pb-2">Our Difference</h3>
+                            <p class="text-secondary-600">While our dedication to delivering top-notch services is what sets us apart, it's our commitment to offering the best care that truly makes a difference! At our dental practice, we go beyond the standard dental experience. We take the time to get to know you as a person; to listen, understand, and tailor your treatment to what your dental goals and needs are.</p>
+                        </div>
+                        
+                        <!-- Our Mission -->
+                        <div>
+                            <h3 class="text-2xl font-display font-bold text-secondary-900 mb-4 border-b border-teal-200 pb-2">Our Mission</h3>
+                            <p class="text-secondary-600">Our mission is to provide exceptional dental care in a comfortable and welcoming environment. We are committed to improving the oral health of our patients through preventive care, education, and personalized treatment plans. We strive to make each visit a positive experience, building lasting relationships based on trust and quality care.</p>
+                        </div>
+                        
+                        <!-- Our Values -->
+                        <div>
+                            <h3 class="text-2xl font-display font-bold text-secondary-900 mb-4 border-b border-teal-200 pb-2">Our Values</h3>
+                            <ul class="space-y-2 text-secondary-600">
+                                <li class="flex items-start">
+                                    <svg class="h-5 w-5 text-teal-600 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span><strong>Excellence:</strong> We are committed to providing the highest quality dental care.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-5 w-5 text-teal-600 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span><strong>Compassion:</strong> We treat each patient with empathy, respect, and understanding.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-5 w-5 text-teal-600 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span><strong>Integrity:</strong> We adhere to the highest ethical standards in all aspects of our practice.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-5 w-5 text-teal-600 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span><strong>Innovation:</strong> We continuously seek to improve our services through education and technology.</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="mt-16 text-center">
-                <p class="text-lg text-secondary-600 max-w-3xl mx-auto mb-8">Our specialists combine over 20 years of experience with ongoing education and the latest techniques to provide exceptional dental care.</p>
-                
-                <a href="index.php#appointment" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-primary shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-all group">
-                    <span class="mr-2">Schedule a Consultation</span>
-                    <svg class="h-5 w-5 text-white group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
+        </div>
+    </section>
+
+    <!-- Call to Action (CTA) Section -->
+    <section class="py-20 bg-gradient-to-r from-teal-600 to-emerald-600 relative">
+        <div class="absolute inset-0 opacity-20">
+            <img src="assets/images/smile-bg.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="absolute inset-0 bg-gradient-to-r from-teal-600/80 to-emerald-600/80"></div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-6">Unlock your perfect smile today</h2>
+                <p class="text-lg text-teal-100 mb-8">Take the first step towards the smile you've always wanted. Our team of experienced professionals is ready to provide you with personalized care and exceptional results.</p>
+                <a href="#appointment" class="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-teal-700 bg-white shadow-md hover:bg-teal-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition-all">
+                    Book your next visit
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Health Tourism Section -->
-    <section class="py-20 bg-primary-600 relative">
-        <div class="absolute inset-0 opacity-10">
-            <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <defs>
-                    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-                        <path d="M 0 10 L 20 10 M 10 0 L 10 20" stroke="white" stroke-width="0.5" fill="none" />
-                    </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#grid)" />
-            </svg>
-        </div>
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="text-white">
-                    <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white/20 text-white mb-4">
-                        <span class="flex h-2 w-2 rounded-full bg-white mr-2"></span>
-                        International Health Tourism
+    <!-- Our People Section -->
+    <section id="our-people" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-teal-100 text-teal-800 mb-4">
+                    <span class="flex h-2 w-2 rounded-full bg-teal-600 mr-2"></span>
+                    Meet Our Team
+                </div>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-4">OUR SPECIALISTS IN CLIDENTA</h2>
+                <p class="text-lg text-secondary-600 max-w-3xl mx-auto">Keeping your smile beautiful and your teeth healthy is the mission of our team with more than 20 years of experience</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Doctor 1 - Dr. Tuğba Temur -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-full h-64 overflow-hidden">
+                        <img src="assets/images/dr-tugba-temur.jpeg" alt="Dr. Tuğba Temur" class="w-full h-full object-cover object-top">
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">Combine Treatment with a Stunning Holiday</h2>
-                    <p class="text-lg text-primary-100 mb-8">Save up to 90% on your dental treatment while enjoying the beautiful city of Istanbul. Our clinic offers comprehensive dental care packages for international patients.</p>
-                    
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                            <div class="ml-3">
-                                <p class="text-white">High-quality dental treatments at a fraction of the cost</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                            <div class="ml-3">
-                                <p class="text-white">Assistance with accommodation and transportation</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                            <div class="ml-3">
-                                <p class="text-white">Personalized treatment plans for international patients</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                            <div class="ml-3">
-                                <p class="text-white">Multilingual staff to ensure clear communication</p>
-                            </div>
-                        </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-display font-bold text-secondary-900">DT. Tuğba Temur</h3>
+                        <p class="text-teal-600 font-medium mb-3">Dental Hygienist</p>
+                        <p class="text-secondary-600 text-sm mb-4">She graduated from Çukurova University Faculty of Dentistry and worked in various institutions including Adana Numune Hospital. Since 2013, she has been practising at the Private Clidenta Oral and Dental Health Clinic.</p>
                     </div>
-                    
-                    <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary-700 bg-white shadow-md hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition-all">
-                        Learn More
-                    </a>
                 </div>
                 
-                <div class="relative">
-                    <div class="absolute -top-6 -right-6 w-24 h-24 bg-white/10 rounded-full"></div>
-                    <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-white/10 rounded-full"></div>
-                    <div class="relative z-10 rounded-xl overflow-hidden shadow-elegant">
-                        <img src="assets/images/team.jpg" alt="Istanbul skyline" class="w-full h-auto">
+                <!-- Doctor 2 - Dr. Fatoş Ezgi Dökme -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-full h-64 overflow-hidden">
+                        <img src="assets/images/dr-ezgi.png" alt="Dr. Fatoş Ezgi Dökme" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-display font-bold text-secondary-900">DT. Fatoş Ezgi Dökme</h3>
+                        <p class="text-teal-600 font-medium mb-3">Dental Hygienist</p>
+                        <p class="text-secondary-600 text-sm mb-4">She graduated in 1999 from Hacettepe University Faculty of Dentistry. Specializes in aesthetic fillings, smile design, and pediatric dentistry. Co-founder of Clidenta Oral and Dental Health Polyclinic since 2013.</p>
                     </div>
                 </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#appointment" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-teal-600 to-emerald-600 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition-all">
+                    Schedule a Consultation
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-20 bg-white">
+    <!-- Testimonial Section -->
+    <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center">
-                <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800 mb-4">
-                    <span class="flex h-2 w-2 rounded-full bg-primary-600 mr-2"></span>
-                    Get in Touch
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-teal-100 text-teal-800 mb-4">
+                    <span class="flex h-2 w-2 rounded-full bg-teal-600 mr-2"></span>
+                    Testimonials
                 </div>
-                <h2 class="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-6">Ready to Transform Your Smile?</h2>
-                <p class="text-lg text-secondary-600 mb-8">Contact us today to schedule your consultation and learn more about our dental treatments. Our team is ready to help you achieve the smile you've always wanted.</p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="index.php#appointment" class="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-primary shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-all group">
-                        <span class="mr-2">Book Appointment</span>
-                        <svg class="h-5 w-5 text-white group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-4">What Our Patients Say</h2>
+                <p class="text-lg text-secondary-600 max-w-3xl mx-auto">From the moment you walk through the door, and all the way through to aftercare, we aim to deliver a personalised and exceptional experience, helping you get the smile you deserve.</p>
+            </div>
+            
+            <div class="testimonial-slider relative max-w-5xl mx-auto">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-xl p-8 shadow-soft border border-gray-100">
+                                <div class="flex text-yellow-400 mb-4">
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                </div>
+                                <p class="text-secondary-600 italic mb-6">As much as I dislike going to the dentist, Dr Renee and all the team make the visits exceptionally pleasing! From the friendliness to the knowledge to the expense, they really do care. Even my teenagers don't hesitate going for their 6 monthly check ups, so that speaks for itself. Highly recommend this practice!</p>
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="assets/images/testimonial-1.jpg" alt="Erica Window" class="h-12 w-12 rounded-full object-cover">
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-bold text-secondary-900">Erica Window</h4>
+                                        <p class="text-sm text-secondary-600">Patient since 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-xl p-8 shadow-soft border border-gray-100">
+                                <div class="flex text-yellow-400 mb-4">
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                </div>
+                                <p class="text-secondary-600 italic mb-6">Rene and his team are always friendly and efficient. Rene and the girls go out of their way to put me at ease so that even having root canal treatment is bearable! Many thanks to all at Atelier Dental for looking after me these last few years.</p>
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="assets/images/testimonial-2.jpg" alt="Rachel F" class="h-12 w-12 rounded-full object-cover">
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-bold text-secondary-900">Rachel F</h4>
+                                        <p class="text-sm text-secondary-600">Patient since 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-xl p-8 shadow-soft border border-gray-100">
+                                <div class="flex text-yellow-400 mb-4">
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                </div>
+                                <p class="text-secondary-600 italic mb-6">I came to Istanbul for dental work and chose Clidenta based on their excellent reviews. The quality of care was outstanding, and the cost was significantly less than what I would have paid back home. The staff was incredibly helpful with arranging my accommodation and transportation. I highly recommend them for dental tourism!</p>
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="assets/images/testimonial-3.jpg" alt="Michael T" class="h-12 w-12 rounded-full object-cover">
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-bold text-secondary-900">Michael T</h4>
+                                        <p class="text-sm text-secondary-600">International Patient</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider Navigation -->
+                <div class="flex justify-center mt-8">
+                    <button class="testimonial-prev mx-2 p-2 rounded-full bg-teal-100 text-teal-600 hover:bg-teal-200 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                         </svg>
-                    </a>
-                    <a href="#contact" class="inline-flex justify-center items-center px-6 py-3 border border-primary-200 text-base font-medium rounded-md text-primary-700 bg-white hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-all">
-                        Contact Us
-                    </a>
+                    </button>
+                    <button class="testimonial-next mx-2 p-2 rounded-full bg-teal-100 text-teal-600 hover:bg-teal-200 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 </main>
 
-<?php include 'includes/footer.php'; ?>
+<!-- Add JavaScript for testimonial slider and scroll reveal -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.scroll-reveal');
+        
+        const revealOnScroll = function() {
+            for (let i = 0; i < revealElements.length; i++) {
+                const windowHeight = window.innerHeight;
+                const elementTop = revealElements[i].getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    setTimeout(function() {
+                        revealElements[i].classList.add('revealed');
+                    }, revealElements[i].dataset.delay || 0);
+                }
+            }
+        };
+        
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+        
+        // Simple testimonial slider
+        const testimonialSlides = document.querySelectorAll('.swiper-slide');
+        const prevButton = document.querySelector('.testimonial-prev');
+        const nextButton = document.querySelector('.testimonial-next');
+        let currentSlide = 0;
+        
+        function showSlide(index) {
+            testimonialSlides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+            });
+        }
+        
+        if (testimonialSlides.length > 0) {
+            showSlide(currentSlide);
+            
+            if (prevButton) {
+                prevButton.addEventListener('click', function() {
+                    currentSlide = (currentSlide - 1 + testimonialSlides.length) % testimonialSlides.length;
+                    showSlide(currentSlide);
+                });
+            }
+            
+            if (nextButton) {
+                nextButton.addEventListener('click', function() {
+                    currentSlide = (currentSlide + 1) % testimonialSlides.length;
+                    showSlide(currentSlide);
+                });
+            }
+        }
+    });
+</script>
 
+<?php include 'includes/footer.php'; ?>
